@@ -628,12 +628,19 @@ textarea {
 
   .contact-img {
       width: 50px;
-      margin-right: 10px;
   }
 
   .contact-text {
       font-size: 16px;
   }
+  @media only screen and (max-width: 37.5em) {
+    .contact-img {
+      width: 30px;
+    } 
+    .contact-text{
+      font-size: 12px;
+    }}
+
 .main-footer {
   background: #000;
   color: #fff; }
