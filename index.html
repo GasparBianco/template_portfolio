@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gaspar Bianco Portfolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-
+    <meta name="description" content="Portfolio backend developer python java django FastAPI springboot" />
+    <link rel="icon" type="image/x-icon" href='./assets/svg/code-square.svg'>
     <link rel="stylesheet" href="css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +21,11 @@
       <div class="header__content">
         <div class="header__logo-container">
           <span class="header__logo-sub">Gaspar Bianco</span>
+        </div>
+        <div class="container-language">
+          <span>English</span>
+          <input type="checkbox" class="check">
+          <span>Español</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -156,12 +161,20 @@
               <div class="skills__skill">FastAPI</div>
               <div class="skills__skill">Pydantic</div>
               <div class="skills__skill">SQLalchemy</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">PostgreSQL</div>
+              <div class="skills__skill">MySQL</div>
               <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Google Cloud</div>
               <div class="skills__skill">Java</div>
               <div class="skills__skill">Hibernate</div>
               <div class="skills__skill">Maven</div>
               <div class="skills__skill">Junit</div>
               <div class="skills__skill">TDD</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">Git</div>
             </div>
           </div>
@@ -177,19 +190,45 @@
             projects that I created with each project containing its own case study
           </span>
         </h2>
-
         <div class="projects__content">
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./assets/png/fades.png"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">LaboulayeNews</h3>
+              <h3 class="projects__row-content-title">FaDes Website</h3>
+              <p class="projects__row-content-desc">
+                FaDes is a financial consulting firm, and they contacted me 
+                to create their website, which includes a landing page with all 
+                their information, and then a blog section where they publish posts and 
+                podcasts on economic topics.
+              </p>
+              <a
+                href="./fades.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/Mockup2.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Diario Nova</h3>
               <p class="projects__row-content-desc">
                 I have created a fully dynamic news portal where all content is loaded from a database. 
                 This includes the news articles and categories. 
@@ -197,7 +236,7 @@
                 This means I can easily add, edit, and delete news articles and categories.
               </p>
               <a
-                href="./project-1.html"
+                href="./diario-nova.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >Case Study</a
@@ -212,51 +251,21 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Feel free to Contact me by submitting the form below and I will get back to you as 
-            soon as possibleFeel free to Contact me 
-            by submitting the form below and I will get back to you as soon as possible
+            Feel free to Contact me and I will get back to you as 
+            soon as possible
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form" netlify>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="name">Name</label>
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                class="contact__form-input"
-                name="name"
-                id="name"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="email">Email</label>
-              <input
-                required
-                placeholder="Enter Your Email"
-                type="text"
-                class="contact__form-input"
-                name="email"
-                id="email"
-              />
-            </div>
-            <div class="contact__form-field">
-              <label class="contact__form-label" for="message">Message</label>
-              <textarea
-                required
-                cols="30"
-                rows="10"
-                class="contact__form-input"
-                placeholder="Enter Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
-          </form>
+          <div class="contact-container">
+            <a href="mailto:gasparbianco98@gmail.com">
+                <img class="contact-img" src="./assets/svg/mail.svg" alt="mail icon" />
+                <p class="contact-text">gasparbianco98@gmail.com</p>
+            </a>
+            <a href="https://wa.me/5493385598713">
+                <img class="contact-img" src="./assets/svg/wpp.svg" alt="whatsapp icon" />
+                <p class="contact-text">+5493385598713</p>
+            </a>
+        </div>
         </div>
       </div>
     </section>
