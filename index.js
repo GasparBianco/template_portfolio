@@ -32,7 +32,35 @@ for (let i = 0; i < headerSmallMenuLinks.length; i++) {
 
 // ---
 const headerLogoConatiner = document.querySelector('.header__logo-container')
+var check = document.querySelector(".check");
+check.addEventListener('click', lenguage);
 
 headerLogoConatiner.addEventListener('click', () => {
-  location.href = 'index.html'
+  let id=check.checked;
+  if (id == true){
+    location.href='index_es.html';
+  }else{
+    location.href='index.html';
+  }
 })
+
+
+var check = document.querySelector(".check");
+check.addEventListener('click', lenguage);
+
+function lenguage(){
+  let id=check.checked;
+  const currentURL = window.location.href;
+  if (currentURL.includes(".html")) {
+    if (id == true){
+      const target = currentURL.replace(".html", "_es.html");
+      location.href=target;
+    }else{
+      const target = currentURL.replace("_es", "");
+      location.href=target;
+    }
+  }else{
+    location.href='index_es.html';
+  }
+
+}
